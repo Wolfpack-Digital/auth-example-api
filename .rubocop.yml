@@ -19,6 +19,9 @@ AllCops:
 Style/Documentation:
   Enabled: false
 
+Style/ClassAndModuleChildren:
+  Enabled: false
+
 Layout/IndentationConsistency:
   EnforcedStyle: rails
 
