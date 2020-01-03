@@ -1,0 +1,56 @@
+AllCops:
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  TargetRubyVersion: 2.5
+  Exclude:
+    - "bin/*"
+    - Capfile
+    - config/boot.rb
+    - config/environment.rb
+    - config/initializers/version.rb
+    - db/schema.rb
+    - "node_modules/**/*"
+    - "tmp/**/*"
+    - "vendor/**/*"
+    - Gemfile
+    - Rakefile
+
+Style/Documentation:
+  Enabled: false
+
+Layout/IndentationConsistency:
+  EnforcedStyle: rails
+
+Metrics/AbcSize:
+  Exclude:
+    - "spec/**/*"
+
+Metrics/BlockLength:
+  Exclude:
+    - "config/**/*"
+    - "spec/**/*"
+
+Metrics/ClassLength:
+  Exclude:
+    - "spec/**/*"
+
+Metrics/LineLength:
+  Exclude:
+    - "config/**/*"
+    - "db/**/*"
+
+Metrics/MethodLength:
+  Max: 12
+  Exclude:
+    - "db/migrate/*"
+    - "spec/**/*"
+
+Naming/PredicateName:
+  Enabled: false
+
+Rails:
+  Enabled: true
+
+Rails/ApplicationRecord:
+  Exclude:
+    - "db/migrate/**"
