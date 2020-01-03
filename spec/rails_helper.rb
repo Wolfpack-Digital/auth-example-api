@@ -3,7 +3,9 @@
 require 'spec_helper'
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../config/environment', __dir__)
+# rubocop:disable Metrics/LineLength
 abort('The Rails environment is running in production mode!') if Rails.env.production?
+# rubocop:enable Metrics/LineLength
 require 'rspec/rails'
 
 begin
