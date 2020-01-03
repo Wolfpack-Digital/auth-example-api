@@ -4,8 +4,6 @@ module ApiErrorHandling
   extend ActiveSupport::Concern
 
   included do
-    respond_to :json
-
     rescue_from ActiveRecord::RecordNotFound do |exception|
       render json: {
         message: "#{exception.model} with id=#{exception.id} not found",
