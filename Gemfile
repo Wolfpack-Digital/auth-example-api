@@ -14,7 +14,7 @@ gem 'sidekiq', ">= 5.2.0"
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.1'
 
 # Auth
-gem 'doorkeeper', '~> 5.2', '>= 5.2.3'
+gem 'doorkeeper', '~> 5.2'
 gem 'bcrypt', '~> 3.1', '>= 3.1.13'
 
 # Serialization
